@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parctica Cambio de Imagenes</title>
+</head>
+<body>
+ <center> <h1> ENCIENDE EL FOCO </h1>   </center>   
+<script>
+
+function prender (sw){
+    var pic;
+    if(sw == 0){
+        pic = "foco_apagado.jpg"
+    }
+    else {
+        pic ="foco_encendido.jpg"
+    }
+document.getElementById('foco').src = pic;
+}
+
+</script>
+<center>
+<img id="foco" width="300" height="400" src="foco_apagado.jpg" alt ="foco funcional">
+</center>
+
+<h2>
+<center>
+<p>
+<button onclick="prender(1)" type="button"> Encender </button>
+<button onclick="prender(0)" type="button"> Apagar </button>
+</p>
+</h2>
+</center>
+</body>
+</html>
+
+
+
+
+
+
